@@ -9,8 +9,8 @@ body{
     background-image: linear-gradient(to bottom, #1d334a, #1d334a, #1d334a, #1D3F3E, #1d4a31);
     margin: 0;
     display: flex;
-    min-height: 1080px;
     flex-direction: column;
+    box-sizing: border-box;
 }
 .container{
     flex: 1;
@@ -92,16 +92,17 @@ nav ul li a:hover::after{
 
 .left-box h1{
     color: #9FC6DB;
-    font-size: 120px;
+    font-size: 110px;
 }
 .centre-box{
-    margin-top: 80px;
+    margin-top: -125px;
     padding: 0 0;
     z-index: -100;
 
 }
 .centre-box img{
-    scale: 1.6;
+    height: 60%;
+    margin-bottom: 0px;
 }
 .right-box{
     margin-top: 75px;
@@ -126,11 +127,11 @@ nav ul li a:hover::after{
     padding: 20px;
     font-size: 80px;
 }
-/* Modal styles */
+
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     left: 0;
     top: 0;
     width: 100%;
@@ -139,11 +140,17 @@ nav ul li a:hover::after{
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 7% auto;
-    padding: 20px;
+    
+    background-color: #1d334a;
+    margin: auto;
+    padding: 50px;
     border-radius: 10px;
-    width: 50%;
+    width: 30%;
+}
+
+.modal-content h1 {
+    color: white;
+    margin-bottom: 20px;
 }
 
 .close {
@@ -153,8 +160,7 @@ nav ul li a:hover::after{
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover{
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -166,23 +172,43 @@ form {
 }
 
 label {
-    margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 20px;
+    color: white;
+}
+
+.contact{
+    margin-bottom: 40px;
+
+}
+
+.user{
+    margin-bottom: 40px;
+}
+
+.address{
+    margin-bottom: 40px;
+
 }
 
 input[type="text"],
-input[type="email"],
-input[type="number"],
 input[type="password"],
 textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
+    margin-top: 6px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
 }
 
-button[type="submit"] {
+.button-group{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.modal-button {
     background-color: #558b5e;
     color: white;
     padding: 15px;
@@ -190,7 +216,23 @@ button[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: transform 0.3s;
 }
+
+.modal-button:hover{
+    transform: scale(1.1);
+}
+
+.clear-btn {
+    width: 35%;
+    background: none;
+    border: 1px white solid;
+}
+
+.submit-btn {
+    width: 60%;
+}
+
 
 .card-group{
     display: flex;
@@ -206,6 +248,7 @@ button[type="submit"] {
     border-radius: 10px;
     text-align: center;
     border: #fff 1px solid;
+    transition: transform 0.3s;
 }
 
 .card h2 {
@@ -219,10 +262,11 @@ button[type="submit"] {
 
 .socials{
     border: none; 
-    margin: 150px 250px; 
-    margin-bottom: 100px; 
+    margin: auto; 
+    margin-bottom: 150px; 
+    margin-top: -40px;
     padding: 0 0; 
-    z-index: 10;
+    z-index: 100;
     scale: 1.6;
 }
 
@@ -232,14 +276,12 @@ button[type="submit"] {
     border-radius: 10px;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* margin: 35px 0 100px auto; */
     height: 50%;
-    transition: transform 0.3s;
     width: 30%;
     
 }
 
-.middle-card:hover{
+.card:hover{
     transform: scale(1.1);
 }
 
@@ -253,9 +295,8 @@ button[type="submit"] {
     display: flex;
     justify-content: left;
     margin: 20px 0px;
-    margin-right: 100px;
     text-align: left;
-    padding: 20px 20px;
+    padding: 20px 20px 20px 0;
     font-size: 30px;
 }
 .features h3{
@@ -265,4 +306,3 @@ button[type="submit"] {
     margin: auto;
     font-size: 50px;
 }
-

@@ -35,9 +35,12 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times</span>
+            <!-- MIGHT NEED TO CHANGE -->
             <div id="form-ct">
                 <form id="myForm">
-                    <div id="user-details">
+                    <h1>Registration Form</h1>
+                    <br>
+                    <div id="user-details" class="user">
 
                         <label>Given Name:</label>
                         <input type="text" id="given-name"><br>
@@ -53,7 +56,7 @@
 
                     </div>
 
-                    <div id="address-details">
+                    <div id="address-details" class="address">
 
                         <label>Home Address:</label>
                         <input type="text" id="home-address"><br>
@@ -63,7 +66,7 @@
 
                     </div>
 
-                    <div id="contact-details">
+                    <div id="contact-details" class="contact">
 
                         <label>Mobile Number:</label>
                         <input type="text" id="number"><br>
@@ -72,8 +75,10 @@
                         <input type="text" id="email"><br>
 
                     </div>
-
-                    <button type="submit">Submit</button>
+                    <div class="button-group">
+                        <button class="modal-button submit-btn">Submit</button>
+                        <button class="modal-button clear-btn">Clear</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -104,7 +109,7 @@
                         <h3>&rightarrow;</h3>
                     </div>
                     <div class="feature-right">
-                        <h3>List items you no longer need</h3>
+                        <h3 style="margin-right: 0px;">List items you no longer need</h3>
                     </div>
                 </div>
                 <br>
@@ -128,7 +133,7 @@
                 </div>
             </div>
             <div class="box centre-box">
-                <img src="planetwhole.png" height=550px>
+                <img src="planetwhole.png">
                 <div class="card socials">
                     <h2 style="font-size: 20px;"><i style="margin-right: 15px;"
                             class="fa-brands fa-square-facebook fa-2x">
