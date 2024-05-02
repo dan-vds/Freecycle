@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/221d422010.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeCycling!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/221d422010.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="header">
         <div class="container">
             <nav>
-                <div class = "left-items">
+                <div class="left-items">
                     <ul>
                         <li><a>HOME</a></li>
                         <li><a>ABOUT US </a><i class="fa-solid fa-caret-down"></i></li>
@@ -20,138 +22,146 @@
                     </ul>
                 </div>
                 <h1 style="color: white; font-size: 50px;">FreeCycle!</h1>
-                <div class = "right-items">
+                <div class="right-items">
                     <ul>
                         <li><a>NEWS </a><i class="fa-solid fa-caret-down"></i></li>
                         <li><a>SEARCH</a></li>
                         <li><a>CONTACT</a></li>
-                        <!-- <li><a><i style="margin-right: 10px" class="fa-brands fa-square-facebook fa-2x"> </i><i style="margin-right: 10px" class="fa-brands fa-instagram fa-2x"></i><i class="fa-brands fa-youtube fa-2x"></i></a></li> -->
                     </ul>
                 </div>
             </nav>
+        </div>
     </div>
-     <div id="myModal" class="modal">
+    <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times</span>
-            <form id="myForm">
-                <label for="name">Given Name:</label>
-                <input type="text" id="given-name" ><br>
+            <div id="form-ct">
+                <form id="myForm">
+                    <div id="user-details">
 
-                <label for="name">Surname:</label>
-                <input type="text" id="surname" ><br>
+                        <label>Given Name:</label>
+                        <input type="text" id="given-name"><br>
 
-                <label for="name">Username:</label>
-                <input type="text" id="username" ><br>
+                        <label>Surname:</label>
+                        <input type="text" id="surname"><br>
 
-                <label for="name">Password:</label>
-                <input type="password" id="password" ><br>
-                
-                <label for="address">Address:</label>
-                <input type="text" id="address"><br>
+                        <label>Username:</label>
+                        <input type="text" id="username"><br>
 
-                <label for="address">Address:</label>
-                <input type="text" id="address"><br>
-                
+                        <label>Password:</label>
+                        <input type="password" id="password"><br>
 
+                    </div>
 
-                <button type="submit">Submit</button>
-            </form>
+                    <div id="address-details">
+
+                        <label>Home Address:</label>
+                        <input type="text" id="home-address"><br>
+
+                        <label>Work Address:</label>
+                        <input type="text" id="work-address"><br>
+
+                    </div>
+
+                    <div id="contact-details">
+
+                        <label>Mobile Number:</label>
+                        <input type="text" id="number"><br>
+
+                        <label>Email:</label>
+                        <input type="text" id="email"><br>
+
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
     <div class="body">
         <div class="middle-row">
-            <div class="box centre-box">
-                <img src="planetwhole.png" height = 550px>
-                <br>
-                <br>
-                
-            </div>
-             <div class="box left-box">
+
+            <div class="box left-box">
                 <h1>Saving The World</h1>
-                <!-- <p>FreeCycle is a non-profit organization that aims to reduce waste and promote sustainability by providing a platform for people to give away items they no longer need.</p> -->
-                <!-- <div class="showcase">
-                    <img src="tree.jpeg" height = 150px>
-                </div> -->
-            <!-- </div>
-            <div class="box right-box"> -->
+
                 <br>
-                
+
+
                 <h2> One item at a time.</h2>
                 <br>
-                <p>Every year, thousands of people throw away goods that are still useful. By signing up to our program, you have an oppotunity to turn another person's trash into your treasure</p>
-                <br>
-                <div class="listings">
-                    <div class="listing-left">
-                        <h3>Electronics</h3>
-                        <p>From laptops to phones, we have a wide range of electronics available for you to choose from</p>
+
+                <div class="features">
+                    <div class="feature-left">
+                        <h3>Sign up using the link below</h3>
                     </div>
-                    <div class="listing-center">
-                        <h3>Furniture</h3>
-                        <p>Need a new couch? Or maybe a new table? We have a wide range of furniture available for you to choose from</p>
+                    <div class="feature-arrow">
+                        <h3>&rightarrow;</h3>
                     </div>
-                    <div class="listing-right">
-                        <h3>Clothing</h3>
-                        <p>From jackets to shoes, we have a wide range of clothing available for you to choose from</p>
+                    <div class="feature-center">
+                        <h3>Browse items that others are giving away</h3>
+                    </div>
+                    <div class="feature-arrow">
+                        <h3>&rightarrow;</h3>
+                    </div>
+                    <div class="feature-right">
+                        <h3>List items you no longer need</h3>
                     </div>
                 </div>
-                <!-- <button class="button" >Register</button> -->
+                <br>
+                <br>
+                <p>Every year, thousands of people throw away goods that are still useful. By signing up to our
+                    program, you have an oppotunity to turn another person's trash into your treasure</p>
+
+
+
+                <br>
+
                 <div class="card-group">
-                    <div class="card">
-                        <h1>Newsletter <i class="fa-solid fa-arrow-up-right-from-square"></i></h1>
-                    </div>
-                    <div class="card middle-card" id="openModalBtn">
+                    <div class="card middle-card" id="trigger-modal">
 
                         <h1>Register &rightarrow;</h1>
                     </div>
-                    <!-- <div class="card">
-                            <h1>Register &rightarrow;</h1>
-                    </div> -->
+                    <div class="card">
+                        <h1>Newsletter <i class="fa-solid fa-arrow-up-right-from-square"></i></h1>
+                    </div>
+
+                </div>
+            </div>
+            <div class="box centre-box">
+                <img src="planetwhole.png" height=550px>
+                <div class="card socials">
+                    <h2 style="font-size: 20px;"><i style="margin-right: 15px;"
+                            class="fa-brands fa-square-facebook fa-2x">
+                        </i><i style="margin-right: 15px" class="fa-brands fa-instagram fa-2x"></i><i
+                            class="fa-brands fa-youtube fa-2x"></i>
+                    </h2>
                 </div>
             </div>
         </div>
 
-
-            <div class="card" style=" border: none; margin: auto;">
-                 <!-- <i style="color: white" class="fa-solid fa-bullseye fa-5x"></i> -->
-                <h2 style="font-size: 30px;"><i style="margin-right: 15px" class="fa-brands fa-square-facebook fa-2x"> </i><i style="margin-right: 15px" class="fa-brands fa-instagram fa-2x"></i><i class="fa-brands fa-youtube fa-2x"></i></h2>
-            </div>
-            
-            <!-- <div class="card">
-                <h2> Visit our socials:</h2>
-                <br>
-                <br>
-                <h2 style="font-size: 30px;"><i style="margin-right: 15px" class="fa-brands fa-square-facebook fa-2x"> </i><i style="margin-right: 15px" class="fa-brands fa-instagram fa-2x"></i><i class="fa-brands fa-youtube fa-2x"></i></h2>
-            </div> -->
-        </div>
-
-    <!-- <div class="statement">
-        <h1>Saving the world - one item at a time</h1>
-        <div class="socials">
-            <p style="margin-bottom: 10px;"> Visit our socials:</p>
-            <a><i style="margin-right: 15px" class="fa-brands fa-square-facebook fa-2x"> </i><i style="margin-right: 15px" class="fa-brands fa-instagram fa-2x"></i><i class="fa-brands fa-youtube fa-2x"></i></a>
-        </div> -->
-
+    </div>
     <script>
         var modal = document.getElementById("myModal");
-        var btn = document.getElementById("openModalBtn");
+        var btn = document.getElementById("trigger-modal");
         var span = document.getElementsByClassName("close")[0];
-        btn.onclick = function() {
+        btn.onclick = function () {
             modal.style.display = "block";
         }
 
-        span.onclick = function() {
+        span.onclick = function () {
             modal.style.display = "none";
         }
 
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
         }
 
-        document.getElementById("myForm").onsubmit = function(event) {
-        event.preventDefault();
-}
+        document.getElementById("myForm").onsubmit = function (event) {
+            event.preventDefault();
+        }
     </script>
 </body>
+
 </html>
