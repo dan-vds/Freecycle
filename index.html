@@ -32,12 +32,12 @@
             </nav>
         </div>
     </div>
-    <div id="myModal" class="modal">
+    <div id="regModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times</span>
+            <span class="exit">&times</span>
             <!-- MIGHT NEED TO CHANGE -->
             <div id="form-ct">
-                <form id="myForm">
+                <form id="regForm">
                     <h1>Registration Form</h1>
                     <br>
                     <div id="user-details" class="user">
@@ -133,24 +133,23 @@
                 </div>
             </div>
             <div class="box centre-box">
-                <img src="planetwhole.png">
+                <img src="planetwhole.png" alt="Cartoon Earth">
                 <div class="card socials">
-                    <h2 style="font-size: 20px;"><i style="margin-right: 15px;"
-                            class="fa-brands fa-square-facebook fa-2x">
-                        </i><i style="margin-right: 15px" class="fa-brands fa-instagram fa-2x"></i><i
-                            class="fa-brands fa-youtube fa-2x"></i>
-                    </h2>
+                    <div class="icons"><i style="margin-right: 15px;" class="fa-brands fa-square-facebook fa-2x"></i>
+                    </div>
+                    <div class="icons"><i style="margin-right: 15px" class="fa-brands fa-instagram fa-2x"></i></div>
+                    <div class="icons"><i class="fa-brands fa-youtube fa-2x"></i></div>
                 </div>
             </div>
         </div>
 
     </div>
     <script>
-        var modal = document.getElementById("myModal");
+        var modal = document.getElementById("regModal");
         var btn = document.getElementById("trigger-modal");
-        var span = document.getElementsByClassName("close")[0];
+        var span = document.getElementsByClassName("exit")[0];
         btn.onclick = function () {
-            modal.style.display = "block";
+            modal.style.display = "flex";
         }
 
         span.onclick = function () {
@@ -161,10 +160,6 @@
             if (event.target == modal) {
                 modal.style.display = "none";
             }
-        }
-
-        document.getElementById("myForm").onsubmit = function (event) {
-            event.preventDefault();
         }
     </script>
 </body>
